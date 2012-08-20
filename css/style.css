@@ -1,0 +1,329 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: helvetica;
+    line-height: 180%;
+    text-align: left;
+    color: #444444;
+}
+
+a:link {
+    color: #444444;
+}
+a:visited {
+    color: #444444;
+}
+a:hover {
+    color: #444444;
+}
+a:active {
+    color: #444444;
+}
+
+.title {
+    position: fixed;
+    width: 100%;
+    top: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: left;
+    padding-left: 50px;
+    color: white;
+    font-size: 20px;
+    z-index: 999;
+
+    background-color: #444444;
+
+    opacity: 0.6;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#slider {
+    position:absolute; 
+    z-index:998;
+    left: 40px;
+    bottom: 292px; 
+    width: 230px;
+}
+
+#year {
+    position:absolute; 
+    left: 49%;
+    width: 2%;
+    text-align: center;
+    bottom: 30px;
+    z-index:999; 
+}
+
+#legend {
+    position:absolute; 
+    left:20px;
+    bottom: 20px;
+
+    z-index:998;
+
+    width: 300px;
+    height: 252px;
+
+    line-height: 23px;
+    padding-left: 10px;
+
+    font-size: 14px;
+
+    background-image: url("images/legende_degradee_2-c.png");
+    background-repeat: no-repeat;
+}
+
+#warning {
+    display: none;
+}
+
+.comments {
+    position:absolute; 
+    right:20px;
+    top: 0px;
+
+    z-index:999;
+
+    font-size: 16px;
+}
+
+.apropos {
+    display: none;
+    
+    width: 30%;
+    
+    font-size: 14px;
+}
+
+.a-apropos {
+    position:absolute; 
+    right:140px;
+    top: 0px;
+
+    z-index:999;
+
+    font-size: 16px;
+}
+
+#info {
+    position:absolute;
+    right:0px;
+    top: 112px;
+    /*bottom: 0px;*/
+    /*max-height: 500px;*/
+
+    width: 300px;
+
+    z-index:999;
+
+    overflow-y: auto;
+
+    font-size: 15px;
+}
+
+#logo {
+    position:absolute;
+    right:20px;
+    top: 23px;
+
+    z-index:999;
+
+    height: 96px;
+    width: 150px;
+}
+
+.info_num {
+    position: relative;
+    float: right;
+
+    /*margin-right: 20px;*/
+}
+
+#slider-arrows {
+    position: relative;
+    left: 3px;
+    bottom: 6px;
+}
+
+#stotal {
+    color: black;
+    font-size: 16px !important;
+}
+
+.rounded_corner {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid black;
+
+    background-color:  rgba(100, 100, 100, 0.2);
+
+    /*margin-right: 20px;*/
+    padding: 5px;
+}
+
+.rounded_corner_no_top {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+    background-color:  rgba(100, 100, 100, 0.2);
+
+    /*margin-right: 20px;*/
+    padding: 5px;
+}
+
+.closeRegion {
+    background: none;
+}
+
+.inv_dette {
+    color: #FF7256;
+}
+
+.inv_total {
+    color: #6495ED;
+}
+
+.inv_sante {
+    color: #3CB371;
+}
+
+.inv_popup {
+    opacity: 0;
+}
+
+#graph_popup {
+    display: none;
+
+    position: absolute;
+    left: 20px;
+    bottom: 274px;
+
+    width: 270px;
+    width: 0 px;
+    height: 55px;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    z-index: 999;
+
+    font-size: 15px;
+    line-height: 120%;
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    
+    text-align: center;
+}
+
+.graph {
+    position: absolute;
+    bottom: 317px;
+
+    z-index: 998;
+}
+
+.graph_title {
+    font-size: 14px;
+}
+
+.graph_subtitle {
+    font-size: 14px;
+}
+
+.graph_path1 {
+    stroke: #6495ED;
+    stroke-width: 3px;
+    fill: none;
+}
+
+.graph_path2 {
+    stroke: #3CB371;
+    stroke-width: 3px;
+    fill: none;
+}
+
+.graph_path3 {
+    stroke: #FF7256;
+    stroke-width: 3px;
+    fill: none;
+}
+
+.graph_point {
+    stroke-width: 2px;
+    fill: white;
+}
+
+.graph_point_hl {
+    stroke-width: 3px;
+    fill: white;
+}
+
+line {
+    stroke: #888888;
+    stroke-width: 1px;
+}
+
+text {
+    color: blue;
+    z-index: 999;
+}
+
+.circle {
+    stroke: black;
+    stroke-width: 1px;
+    fill: #AAAAAA;
+}
+
+.circle:hover {
+   cursor: pointer;
+}
+
+.node {
+    stroke: black;
+    stroke-width: 1px;
+    fill-opacity: 1;
+}
+
+.inner_text {
+    fill: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.outer_text {
+    fill: #222222;
+    font-weight: bold;
+}
+
+.a-no-line {
+    text-decoration: none;
+}
+
+.leaflet-bottom {
+    display: none;
+}
+
+#uvTab {
+    right: 0px !important;
+}
