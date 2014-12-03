@@ -2,9 +2,10 @@
 <html>
 
 <head>
-	<title>Investissements en santé au Québec</title>
-        <meta name="description" content="Carte intéractive montrant les investissements en santé du Gouvernement du Québec entre 2006 et 2011 par bassins de population.">
-	<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /> 
+	<title>Investissements en santÃ© au QuÃ©bec</title>
+	<meta charset="utf-8">
+        <meta name="description" content="Carte intÃ©ractive montrant les investissements en santÃ© du Gouvernement du QuÃ©bec entre 2006 et 2011 par bassins de population.">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" /> 
 	<script src="lib/mapbox-wax/ext/leaflet.js" type='text/javascript'></script>
 	<script src="lib/mapbox-wax/dist/wax.leaf.js" type='text/javascript'></script>
         <script src="lib/jquery/jquery-1.7.2.min.js"></script>
@@ -34,59 +35,59 @@
 
 <body>
   <div class="title">
-    <h1>Investissements du Québec en Santé</h1>
+    <h1>Investissements du QuÃ©bec en SantÃ©</h1>
   </div>
   <div id="warning" style="display:none">
     Vous utilisez une version d'Internet Explorer non-compatible (< 9).</br></br>
-    Pour accéder aux fonctionnalités de ce site web, mettre à jour votre navigateur ou utiliser Mozilla Firefox /Google Chrome                                                               
+    Pour accÃ©der aux fonctionnalitÃ©s de ce site web, mettre Ã  jour votre navigateur ou utiliser Mozilla Firefox /Google Chrome                                                               
   </div>
-  <a href="#apropos" class="a-apropos">À propos</a>
+  <a href="#apropos" class="a-apropos">Ã€ propos</a>
   <a href="javascript:UserVoice.showPopupWidget();" class="comments" title="Open feedback & support dialog (powered by UserVoice)">Commentaires</a>
   <div id="apropos" class="apropos">
     <p>
-      <h1>Investissements du Québec en Santé</h1>
+      <h1>Investissements du QuÃ©bec en SantÃ©</h1>
     </p>
     
-    <h3>À propos</h3>
+    <h3>Ã€ propos</h3>
     
     <p>
-      Le dossier de la Santé a toujours été au centre des préoccupations des Québécois.  De ce fait, le gouvernement y investit annuellement à peu près 26 % de son <a href="http://www.budget.finances.gouv.qc.ca/Budget/2012-2013/fr/documents/Donneeshist.pdf" target="_blank">budget total</a>. Nous avons pris l'initiative de construire cette application sur ce sujet pour répondre à deux objectifs. D'abord, montrer qu'il est possible de créer un projet de grande qualité par l'utilisation d'innombrables ressources technologiques, en utilisant uniquement des données publiques libérées par l'État. Enfin, nous voulons souligner l'importance et l'utilité pour le public de l'initiative <a href="http://www.ouvert.gouv.qc.ca/" target="_blank">Données Ouvertes</a>, entamée cette année par le Gouvernement du Québec.
+      Le dossier de la SantÃ© a toujours Ã©tÃ© au centre des prÃ©occupations des QuÃ©bÃ©cois.  De ce fait, le gouvernement y investit annuellement Ã  peu prÃ¨s 26 % de son <a href="http://www.budget.finances.gouv.qc.ca/Budget/2012-2013/fr/documents/Donneeshist.pdf" target="_blank">budget total</a>. Nous avons pris l'initiative de construire cette application sur ce sujet pour rÃ©pondre Ã  deux objectifs. D'abord, montrer qu'il est possible de crÃ©er un projet de grande qualitÃ© par l'utilisation d'innombrables ressources technologiques, en utilisant uniquement des donnÃ©es publiques libÃ©rÃ©es par l'Ã‰tat. Enfin, nous voulons souligner l'importance et l'utilitÃ© pour le public de l'initiative <a href="http://www.ouvert.gouv.qc.ca/" target="_blank">DonnÃ©es Ouvertes</a>, entamÃ©e cette annÃ©e par le Gouvernement du QuÃ©bec.
     </p>
 
-    <h3>Les données</h3>
+    <h3>Les donnÃ©es</h3>
 
     <p>
-      Les populations totales par régions administratives utilisées dans cette carte proviennent de l'<a href="http://www.stat.gouv.qc.ca/donstat/societe/demographie/dons_regnl/regional/ra_total.htm" target="_blank">Institut de la Statistique du Québec</a>. Les contours financiers des investissements par programme par région, du <a href="http://www.ouvert.gouv.qc.ca/?node=/donnees-details&id=msss_273" target="_blank">Ministère de la Santé</a>. Les données géographiques proviennent de la <a href="http://www.ouvert.gouv.qc.ca/?node=/donnees-details&id=219b5137-1ff6-4bc6-ab57-0b245f6f1540" target="_blank">Base de Données Géographiques Administratives du Québec</a> et l'écoumène de population généralisé de <a href="http://geodepot.statcan.gc.ca/2006/040120011618150421032019/16151605032113051405_06-fra.jsp" target="_blank">Statistique Canada</a>. Enfin, les données que nous avons croisées à partir de ces sources pour produire les effets visuels de cette carte, sont disponibles <a href="depenses_sante_all.json" target="_blank">ici</a> en format GeoJson.
+      Les populations totales par rÃ©gions administratives utilisÃ©es dans cette carte proviennent de l'<a href="http://www.stat.gouv.qc.ca/donstat/societe/demographie/dons_regnl/regional/ra_total.htm" target="_blank">Institut de la Statistique du QuÃ©bec</a>. Les contours financiers des investissements par programme par rÃ©gion, du <a href="http://www.ouvert.gouv.qc.ca/?node=/donnees-details&id=msss_273" target="_blank">MinistÃ¨re de la SantÃ©</a>. Les donnÃ©es gÃ©ographiques proviennent de la <a href="http://www.ouvert.gouv.qc.ca/?node=/donnees-details&id=219b5137-1ff6-4bc6-ab57-0b245f6f1540" target="_blank">Base de DonnÃ©es GÃ©ographiques Administratives du QuÃ©bec</a> et l'Ã©coumÃ¨ne de population gÃ©nÃ©ralisÃ© de <a href="http://geodepot.statcan.gc.ca/2006/040120011618150421032019/16151605032113051405_06-fra.jsp" target="_blank">Statistique Canada</a>. Enfin, les donnÃ©es que nous avons croisÃ©es Ã  partir de ces sources pour produire les effets visuels de cette carte, sont disponibles <a href="depenses_sante_all.json" target="_blank">ici</a> en format GeoJson.
     </p>
     
     <h3>Nous joindre</h3>
 
     <p>
-      Communiquez avec nous pour toutes questions relatives à cette application au info@mapgears.com.
+      Communiquez avec nous pour toutes questions relatives Ã  cette application au info@mapgears.com.
     </p>
     
     <h3>Licence</h3>
 
     <p>
-      Comprend des données ouvertes octroyées sous la licence d'utilisation des données ouvertes de l'Administration gouvernementale disponible à l'adresse Web : <a href="http://www.xn--donnes-eva.gouv.qc.ca/?node=/accueil" target="_blank">www.données.gouv.qc.ca</a> . L'octroi de la licence n'implique aucune approbation par l'Administration gouvernementale de l'utilisation des données ouvertes qui en est faite.
+      Comprend des donnÃ©es ouvertes octroyÃ©es sous la licence d'utilisation des donnÃ©es ouvertes de l'Administration gouvernementale disponible Ã  l'adresse Web : <a href="http://www.xn--donnes-eva.gouv.qc.ca/?node=/accueil" target="_blank">www.donnÃ©es.gouv.qc.ca</a> . L'octroi de la licence n'implique aucune approbation par l'Administration gouvernementale de l'utilisation des donnÃ©es ouvertes qui en est faite.
     </p>
   </div>
   <div id="graph_popup">  
-    <span class="inv_popup inv_sante" visibility="hidden">Santé (vert)</span></br>
-    <span class="inv_popup inv_total" display="none">Autres postes budgétaires (bleu)</span></br>
+    <span class="inv_popup inv_sante" visibility="hidden">SantÃ© (vert)</span></br>
+    <span class="inv_popup inv_total" display="none">Autres postes budgÃ©taires (bleu)</span></br>
     <span class="inv_popup inv_dette" display="none">Service de la dette (rouge)</span>
   </div>
   <div id="legend">Administration et soutien des services</br>
-    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=ytj0+ecUqWg=">Services généraux - Activités cliniques</a></br>
-    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=afZePUSNIjE=">Santé physique</a></br>
-    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=WFQf2nzHgyA=">Santé mentale</a></br>
-    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=Q1WrHDkfMkg=">Santé publique</br>
-      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=xzRYLDqWyHI=">Perte d'autonomie liée au vieillissement</a></br>
-      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=Ny1l0wCtnJs=">Déficience intellectuelle et TEI</a></br>
-      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=tcRKfgi8S3E=">Déficience physique</a></br>
-      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=8hdQV2BltZY=">Dépendances</a></br>
-      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=0N8L4k3+biU=">Jeunes en difficulté</a></br>
-      Gestion des bâtiments</br>
+    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=ytj0+ecUqWg=">Services gÃ©nÃ©raux - ActivitÃ©s cliniques</a></br>
+    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=afZePUSNIjE=">SantÃ© physique</a></br>
+    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=WFQf2nzHgyA=">SantÃ© mentale</a></br>
+    <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=Q1WrHDkfMkg=">SantÃ© publique</br>
+      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=xzRYLDqWyHI=">Perte d'autonomie liÃ©e au vieillissement</a></br>
+      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=Ny1l0wCtnJs=">DÃ©ficience intellectuelle et TEI</a></br>
+      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=tcRKfgi8S3E=">DÃ©ficience physique</a></br>
+      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=8hdQV2BltZY=">DÃ©pendances</a></br>
+      <a target="_blank" class="a-no-line" href="http://www.informa.msss.gouv.qc.ca/Listes.aspx?Name=y9M4IcKgjFYapz02jKwkUg==&Key=hhKpcdsNkJS+eg2gWNwm7A==&OrderByClause=8jnVPckjxX8dPG+Ajs/DlA==&idDimension=0N8L4k3+biU=">Jeunes en difficultÃ©</a></br>
+      Gestion des bÃ¢timents</br>
   </div>
   <div id="info">
   </div>
@@ -103,7 +104,3 @@
   </script>
 </body>
 </html>
-<<<<<<< HEAD
-=======
-
->>>>>>> cd2c53ab69b4728931b144358a5910d2fc5f0d14
